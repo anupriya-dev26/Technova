@@ -1,0 +1,160 @@
+.Formsections {
+    padding: 30px 10% 70px;
+    background: #f8f9fc;
+    font-family: Arial, sans-serif;
+}
+
+.workcontent {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.workcontent h1 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #1e1e1e;
+    margin: 0 0 20px;
+}
+
+.workcontent p {
+    color: #777;
+    font-size: 17px;
+    line-height: 2;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.formpart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.formleft {
+    width: 38%;
+}
+
+.formleft h2 {
+    font-size: 23px;
+    font-weight: bolder;
+    margin: 10px 0 35px;
+    color: #070606;
+    
+}
+
+.formleft p {
+    color: #777;
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 32px;
+}
+
+.formright {
+    width: 62%;
+}
+
+.inputrow {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 25px;
+}
+
+.fields {
+    flex: 1;
+    min-width: 0;
+}
+
+.fields input,
+.fields textarea {
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #eee;
+    outline: none;
+    color: #555;
+    font-size: 15px;
+    padding: 20px 25px;
+}
+
+.fields input {
+    height: 62px;
+    border-radius: 35px;
+}
+
+.fields textarea {
+    height: 165px;
+    border-radius: 28px;
+    resize: none;
+    padding-top: 25px;
+}
+
+.fields input:focus,
+.fields textarea:focus {
+    border-color: #8261ee;
+}
+
+.fields input::placeholder,
+.fields textarea::placeholder {
+    color: #777;
+    opacity: 1;
+}
+
+.messagefield {
+    margin-bottom: 55px;
+}
+
+.fields p {
+    color: red;
+    font-size: 13px;
+    margin: 8px 15px;
+}
+
+.buttonpart {
+    text-align: left;
+}
+.button {
+    color:red;
+}
+ .buttonpart button {
+    background:#ff589e;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 19px 28px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.buttonpart button:hover {
+    background: #5f45c7;
+} 
+
+@media (max-width: 768px) {
+    .Formsections {
+        padding: 40px 6%;
+    }
+
+    .formpart {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .formleft,
+    .formright {
+        width: 100%;
+    }
+
+    .inputrow {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .workcontent {
+        margin-bottom: 45px;
+    }
+
+    .messagefield {
+        margin-bottom: 30px;
+    }
+}

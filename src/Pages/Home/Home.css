@@ -1,0 +1,194 @@
+
+    .project-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 50px 10%;
+    min-height: 400px;
+    box-sizing: border-box;
+}
+
+.leftpart,
+.rightpart {
+    width: 50%;
+}
+
+.leftpart img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.rightpart h1 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+.rightpart p {
+    font-size: 18px;
+    line-height: 1.9;
+    color: #777;
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .project-row {
+        flex-direction: column !important;
+        padding: 35px 6%;
+        gap: 25px;
+    }
+
+    .leftpart,
+    .rightpart {
+        width: 100%;
+    }
+
+    .leftpart img {
+        max-width: 300px;
+    }
+
+    .rightpart h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .rightpart p {
+        font-size: 16px;
+    }
+}
+
+    
+.hero {
+     background-image: url('../../Assets/image.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    width: 100%;
+    min-height: 600px;
+    padding: 100px 6% 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 25px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+.Herosec {
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.Herosec h1 {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    font-size: 30px;
+    font-weight: bolder;
+    line-height: 1.5;
+    color: black;
+}
+
+.Herosec p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgb(102, 96, 96);
+}
+
+.Herosec button {
+    background: #ff589e;
+    color: white;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+
+.herobox {
+    width: calc((100% - 50px) / 3);
+    min-height: 260px;
+    padding: 35px 25px;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 25px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px 0px white;
+    position: relative;
+    z-index: 3;
+        transition: all 0.3s ease;
+}
+.herobox:hover {
+     transform: scale(1.05);
+}
+.herobox img {
+    width: 80px;
+    height: 80px;
+    padding: 12px;
+    object-fit: contain;
+    background: #cc6d95;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.herobox img:hover {
+    background-color: #ff589e;
+}
+
+
+.herobox h2,
+.herobox h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin: 0 0 18px;
+}
+
+.herobox p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #888;
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 70px 6% 40px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .Herosec {
+        margin-bottom: 20px;
+    }
+
+    .Herosec h1 {
+        font-size: 27px;
+    }
+
+    .herobox {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 0;
+    }
+}

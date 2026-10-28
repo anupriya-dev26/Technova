@@ -1,0 +1,107 @@
+.Table {
+
+    
+    padding:40px;
+    text-align: center;
+    background-color: rgb(243, 148, 148);
+}
+.Table p{
+    color:rgb(105, 99, 99);
+    padding:20px;
+    max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
+  margin-top:20px;
+}
+.MainBox {
+     background-color: white;
+     width:350px;
+     height:500px;
+     border-radius: 15px;
+     display:inline-block;
+     margin:20px;
+
+     
+}
+.MainBox h3 {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  
+
+}
+.MainBox h4{
+  color:white;
+  background-color: #fab9d5;
+  width: 150px;
+  margin:auto;
+  padding:30px 30px;
+  border-radius: 5px;
+}
+.MainBox h5 {
+  padding:15px;
+
+}
+.MainBox button{
+  color:white;
+  background-color:#ff589e;
+  padding:10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bolder;
+
+}
+button:hover {
+  background-color: blueviolet;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    .Table {
+        width: 100%;
+        padding: 30px 10px;
+        box-sizing: border-box;
+    }
+
+    .Table p {
+        width: 100%;
+        max-width: 450px;
+        padding: 10px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    .MainBox {
+        display: block;
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        min-height: 450px;
+        margin: 20px auto;
+        padding: 20px 15px;
+        box-sizing: border-box;
+    }
+
+    .MainBox h3 {
+        font-size: 19px;
+        margin-bottom: 25px;
+    }
+
+    .MainBox h4 {
+        width: 140px;
+        padding: 25px;
+    }
+
+    .MainBox h5 {
+        padding: 10px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .MainBox button {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+}
