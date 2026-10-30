@@ -10,7 +10,7 @@ import Workprocess from "./Pages/Workprocess/Workprocess";
 import Footer from "./Components/Footer/Footer";
  import {Routes, Route} from 'react-router-dom';
 import Form from "./Pages/Form/Form";
-import Project from "./Pages/Home/Project";
+// import Project from "./Pages/Home/Project";
 
 export default function App() {
   return(
